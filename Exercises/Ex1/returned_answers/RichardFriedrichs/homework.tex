@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{feynmf,cite}
+%\usepackage{biblatex} %[citestyle=authoryear,natbib=true,backend=bibtex, maxbibnames=99, bibstyle=authoryear]
+%\bibliography{bibliography}
+\begin{document}
+\bibliographystyle{unsrt}
+
+%\DeclareNameAlias{sortname}{family-given}
+%\addbibresource{bibliography.bib}
+
+
+
+
+This is not a drill, it is a shovel. Also, please take a look at Fig. \ref{figure_number_one}.
+
+\begin{figure}[h]
+  \vspace{10pt}
+  \centering
+\parbox{0.4\linewidth}{
+\begin{fmffile}{graph1}
+\begin{fmfchar*}(100,60)
+  \fmfleft{i1,i2}
+  \fmfright{o1,o2}
+  \fmf{plain_arrow,tension=2.0}{i1,v1}
+  \fmf{plain_arrow,tension=1.0}{v1,v2}
+  \fmf{plain_arrow,tension=1.0}{v2,i2}
+  \fmf{wiggly,tension=1.0}{v1,o1}
+  \fmf{wiggly,tension=1.5}{v2,o2}
+     \put(0,65){$e^+$}
+     \put(0,-10){$e^-$}
+     \put(100,65){$\gamma$}
+     \put(100,-10){$\gamma$}
+\end{fmfchar*}
+\end{fmffile}}
+\parbox{0.4\linewidth}{
+  \begin{fmffile}{graph2}
+    \begin{fmfchar*}(100,60)
+      \fmfleft{i1,i2}
+      \fmfright{o1,o2}
+      \fmf{plain_arrow,tension=1.0}{i1,v1}
+      \fmf{plain_arrow,tension=1.0}{v1,v2}
+      \fmf{plain_arrow,tension=2.0}{v2,i2}
+      \fmf{wiggly,tension=1.5}{v1,o1}
+      \fmf{wiggly,tension=1.0}{v2,o2}
+         \put(0,65){$e^+$}
+         \put(0,-10){$e^-$}
+         \put(100,65){$\gamma$}
+         \put(100,-10){$\gamma$}
+    \end{fmfchar*}
+    \end{fmffile}}
+\vspace{10pt}
+\caption{Feynman graphs for the lowest order contributions to electron-positron annihilation \cite{Carloni:2019ejp}.}\label{figure_number_one}
+\end{figure}
+
+\bibliography{bibliography}
+\end{document}
