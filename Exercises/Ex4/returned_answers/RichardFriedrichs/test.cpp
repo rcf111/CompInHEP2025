@@ -36,6 +36,7 @@ void test_recon_track_class()
     cout << "The pseudorapidity of the child particle is " << particle_2.get_pseudorapidity() << endl;
 
     cout << "To confirm parenthood, let's compare the ids: the id of the parent particle is " << particle_1.get_id() << " and the parent id of the child particle is " << particle_2.get_parent_id() << endl;
+    cout << "NB: I wasn't sure whether particle id was referring to the particle type or an integer, like a normal id, so I set it to integer as a precaution - since integers can always be interpreted as codenames for particle types." << endl;
 }
 
 int main()
