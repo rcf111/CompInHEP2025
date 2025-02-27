@@ -37,6 +37,10 @@ cleanAll:
 	$(MAKE) clean
 	rm $(wildcard *.png *.root *.pdf *.C)
 
-run: $(EXEC1) $(EXEC2) 
+runC: $(EXEC1) $(EXEC2) 
 	./$(EXEC1)
 	./$(EXEC2) 
+
+runPy:
+	python3 makegauss.py
+	python3 drawgraph.py
