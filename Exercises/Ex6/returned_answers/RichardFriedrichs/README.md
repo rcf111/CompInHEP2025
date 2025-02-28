@@ -1,0 +1,1 @@
+Use "make runC" to run the C++ codes and "make runPy" to run the python codes. There's also separate "make clean" and "make cleanAll".

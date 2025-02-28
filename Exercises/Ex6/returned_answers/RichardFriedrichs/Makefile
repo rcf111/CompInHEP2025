@@ -34,8 +34,8 @@ clean: $(GARBAGE)
 	rm $(GARBAGE) $(EXEC1) $(EXEC2)
 
 cleanAll: 
-	$(MAKE) clean
 	rm $(wildcard *.png *.root *.pdf *.C)
+	$(MAKE) clean
 
 runC: $(EXEC1) $(EXEC2) 
 	./$(EXEC1)
