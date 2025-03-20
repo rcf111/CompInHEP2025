@@ -24,7 +24,7 @@ def drawgraph():
     for i in range(n_points):
         graph.SetPoint(i, xvalues[i], yvalues[i])
 
-    canvas = ROOT.TCanvas("canvas", "Graph", 800, 600)
+    canvas = ROOT.TCanvas("canvas", "Graph", 1200, 600)
     canvas.SetFillColor(ROOT.kWhite)
     graph.Draw("AP")
 
