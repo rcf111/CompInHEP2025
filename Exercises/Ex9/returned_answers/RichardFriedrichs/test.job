@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-export LD_LIBRARY_PATH=:/home/rcf111/uusroot/lib:pythia8313/lib
-export PYTHIA8DATA=/home/rcf111/Public/html/HiggsAnalysis.git/CompInHEP2025/Exercises/Ex9/returned_answers/RichardFriedrichs/pythia8313/share/Pythia8/xmldoc
-./makedata
-python3 drawgraph.py
