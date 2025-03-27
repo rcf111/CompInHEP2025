@@ -13,7 +13,7 @@ int main() {
   pythia.init();
   std::ofstream ptOut("pt.dat");
   std::ofstream rapidOut("rapid.dat");
-  for (int iEvent = 0; iEvent < 10000; ++iEvent) {
+  for (int iEvent = 0; iEvent < 100000; ++iEvent) {
     if (!pythia.next()) continue;
 
     for (int iParticle = 0; iParticle < pythia.event.size(); ++iParticle) {
