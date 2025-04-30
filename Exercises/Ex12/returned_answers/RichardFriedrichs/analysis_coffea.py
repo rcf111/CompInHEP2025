@@ -24,7 +24,7 @@ class Analysis(processor.ProcessorABC):
         self.histograms = {}
         self.histograms["pileup"] = (
             hda.Hist.new
-            .Reg(200, 0 ,200, name="x", label="x-axis")
+            .Reg(50, 0 , 50, name="x", label="x-axis")
             .Double()
         ) 
 
@@ -80,6 +80,8 @@ def main():
     fig, ax = plt.subplots()
     h.plot(ax=ax)
     ax.set_xlim(0, 50)
+    ax.set_xlabel("Number of primary vertices")
+    ax.set_ylabel("Number of events")
 
     plt.savefig("pileup_histogram.png")
 
